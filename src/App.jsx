@@ -65,27 +65,27 @@ function App() {
             </div>
             <div img-title="image-2" className="title">
               <small>2020 - ONGOING</small>
-              <h1>COOL SHADDER 1</h1>
+              <h1>COOL SHADDER 2</h1>
             </div>
             <div img-title="image-3" className="title">
               <small>2020 - ONGOING</small>
-              <h1>COOL SHADDER 1</h1>
+              <h1>COOL SHADDER 3</h1>
             </div>
             <div img-title="image-4" className="title">
               <small>2020 - ONGOING</small>
-              <h1>COOL SHADDER 3</h1>
+              <h1>COOL SHADDER 4</h1>
             </div>
             <div img-title="image-5" className="title">
               <small>2020 - ONGOING</small>
-              <h1>COOL SHADDER 4</h1>
+              <h1>COOL SHADDER 5</h1>
             </div>
             <div img-title="image-6" className="title">
               <small>2020 - ONGOING</small>
-              <h1>COOL SHADDER 5</h1>
+              <h1>COOL SHADDER 6</h1>
             </div>
             <div img-title="image-7" className="title">
               <small>2020 - ONGOING</small>
-              <h1>COOL SHADDER 6</h1>
+              <h1>COOL SHADDER 7</h1>
             </div>
           </div>
         </section>
