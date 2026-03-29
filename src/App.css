@@ -21,7 +21,7 @@ main {
 section {
   position: relative;
   min-height: 100vh;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   z-index: 2;
 }
 
@@ -79,4 +79,115 @@ nav .center-text {
   line-height: 1.5;
   opacity: 0.8;
   max-width: 80%;
+}
+
+#section-2 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: white;
+}
+
+#section-2 .titles {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1.5rem; */
+}
+
+#section-2 .titles .title {
+  display: flex;
+  gap: 4rem;
+  opacity: 0.5;
+  padding-top: 1.5rem;
+  cursor: pointer;
+  padding-bottom: 3rem;
+  width: fit-content;
+}
+
+#section-2 .titles .title small {
+  margin-top: 0.75rem;
+}
+
+#section-2 .titles .title h1 {
+  font-size: 5rem;
+  font-weight: 200;
+  line-height: 1;
+}
+
+#section-2 .titles .title:hover {
+  opacity: 1;
+}
+
+#canvas-element::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("/background-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s linear;
+}
+
+main:has(#section-2 .title:hover) #canvas-element::after {
+  /* background-image: url("/background-1.png"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  opacity: 0;
+}
+
+.images {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+main:has(#section-2 .title[img-title="image-1"]:hover) .images #image-1 {
+  opacity: 1;
+  background-color: rgba(6, 23, 56, 0.87);
+}
+
+main:has(#section-2 .title[img-title="image-2"]:hover) .images #image-2 {
+  opacity: 1;
+  background-color: rgba(19, 28, 70, 0.808);
+}
+
+main:has(#section-2 .title[img-title="image-3"]:hover) .images #image-3 {
+  opacity: 1;
+  background-color: rgba(19, 28, 70, 0.808);
+}
+
+main:has(#section-2 .title[img-title="image-4"]:hover) .images #image-4 {
+  opacity: 1;
+  background-color: rgba(105, 41, 124, 0.466);
+}
+
+main:has(#section-2 .title[img-title="image-5"]:hover) .images #image-5 {
+  opacity: 1;
+  background-color: rgba(11, 73, 189, 0.336);
+}
+
+main:has(#section-2 .title[img-title="image-6"]:hover) .images #image-6 {
+  opacity: 1;
+  background-color: rgba(19, 68, 47, 0.486);
+}
+
+main:has(#section-2 .title[img-title="image-7"]:hover) .images #image-7 {
+  opacity: 1;
+  background-color: rgba(99, 22, 22, 0.486);
 }
