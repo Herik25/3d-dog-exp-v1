@@ -79,9 +79,10 @@ function Dog() {
       matcap: mat1,
     });
 
-    const branchesMaterial = new THREE.MeshStandardMaterial({
+    const branchesMaterial = new THREE.MeshMatcapMaterial({
       normalMap: branchesNormal,
-      map: branchesDiffuse,
+      //   map: branchesDiffuse,
+      matcap: mat1,
     });
 
     function onBeforeCompile(shader) {
@@ -111,12 +112,13 @@ function Dog() {
           
           float progress = smoothstep(uProgress - transitionFactor,uProgress, (vViewPosition.x+vViewPosition.y)*0.5 + 0.5);
 
-          vec4 matcapColor = mix(matcapColor2, matcapColor1, progress );
+          vec4 matcapColor = mix(matcapColor2, matcapColor1, progress);
         `,
       );
     }
 
     dogMaterial.onBeforeCompile = onBeforeCompile;
+    branchesMaterial.onBeforeCompile = onBeforeCompile;
 
     model.scene.traverse((child) => {
       if (child.isMesh && child.name.includes("DOG")) {
@@ -138,7 +140,7 @@ function Dog() {
         start: "top top",
         end: "bottom bottom",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
