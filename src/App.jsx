@@ -89,7 +89,35 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="sectoin-3"></section>
+        <section id="section-3">
+          <div className="section-3-grid-wrapper">
+            <div className="section-3-grid">
+              <h3>
+                Lorem ipsum dolor <br /> sit amet consectetur <br /> adipisicing
+                elit. <br /> Velit aliquam id sit.
+              </h3>
+              <div></div>
+              <div></div>
+              <div></div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+                eligendi voluptatibus voluptatum saepe totam amet earum
+                expedita, quibusdam corrupti, corporis repellat harum dolorem
+                modi reprehenderit adipisci asperiores enim. Tempore, fuga! Nemo
+                commodi nostrum molestias laborum repudiandae porro asperiores
+                voluptatum excepturi?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+                eligendi voluptatibus voluptatum saepe totam amet earum
+                expedita, quibusdam corrupti, corporis repellat harum dolorem
+                modi reprehenderit adipisci asperiores enim. Tempore, fuga! Nemo
+                commodi nostrum molestias laborum repudiandae porro asperiores
+                voluptatum excepturi?
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
