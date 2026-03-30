@@ -71,6 +71,8 @@ nav .center-text {
   text-align: right;
   line-height: 100%;
   opacity: 0.8;
+  position: relative;
+  z-index: 1;
 }
 
 .section-1-main-div p {
